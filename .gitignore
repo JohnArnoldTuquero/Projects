@@ -45,3 +45,9 @@ ehthumbs.db
 # 7. Java Virtual Machine Crash Logs
 hs_err_pid*
 replay_pid*
+
+# 8. Screenshots and Images
+*.png
+*.jpg
+*.jpeg
+*.gif
