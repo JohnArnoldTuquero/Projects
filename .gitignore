@@ -1,0 +1,47 @@
+
+# 1. Compiled Java Output (Banned from Version Control)
+*.class
+*.log
+*.ctxt
+bin/
+out/
+target/
+build/
+
+# 2. Package & Archive Files (Dependencies should not be in Git)
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# 3. IntelliJ IDEA Project Files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# 4. Visual Studio Code Configuration
+.vscode/
+.history/
+*.code-workspace
+
+# 5. Eclipse IDE Files
+.metadata/
+.classpath
+.project
+.settings/
+*.launch
+
+# 6. Operating System Trash Files
+Thumbs.db
+.DS_Store
+.DS_Store?
+ehthumbs.db
+[Dd]esktop.ini
+
+# 7. Java Virtual Machine Crash Logs
+hs_err_pid*
+replay_pid*
