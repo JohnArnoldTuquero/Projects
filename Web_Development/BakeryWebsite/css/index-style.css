@@ -1,0 +1,89 @@
+
+/*para mareset yung sides and top sa mga browser para walang matitirang margin o padding*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Index.html */
+
+header {
+    background-color: #660ead;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    box-sizing: border-box;
+
+}
+
+nav a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    color: white;
+    margin-left: 20px; /* Pwede mong ayusin dito ang agwat kung gusto mo */
+    transition: 0.3s;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: white;
+    
+}
+
+/*nav a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+}*/
+
+/*para kapag natapat yug mouse dun sa mga words dun sa navbar is mag papalit sila ng kulay...*/
+nav a:hover {
+    color: blueviolet;
+}
+
+
+
+.hero {
+    background-image: url('../assets/photo-1750341472956-e69e84cc71a9.avif');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ebe3e3;
+}
+
+/* para ma darken ng konti yung background picture and mag appear ng mas malinaw yung text */
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+/* para mag appear yung words ng mas malinaw kasi kapag wala to matatakpan ng overlay */
+.hero h1, .hero p, .hero button {
+    position: relative;
+    z-index: 2;
+}
