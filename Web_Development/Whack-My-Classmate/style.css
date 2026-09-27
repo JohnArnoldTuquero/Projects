@@ -1,0 +1,53 @@
+*{
+    margin: 20;
+    padding: 20;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    
+    
+}
+
+body{
+    padding: 50px;
+    text-align: center;
+    background: url(assets/wallhaven-0wxjjq_1600x900.png);
+    background-size: cover;
+}
+
+#board{
+    width: 540px;
+    height: 540px;
+    background: url(assets/dirt.jpeg);
+    background-size: cover;
+    border: 3px solid white;
+    border-radius: 30px;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body h2, h1{
+    color: white;
+}
+
+#board div{
+    /* board = 540x540, divide into 3x3 tiles is 180x180 per div */
+    width: 180px;
+    height: 180px;
+    background: url(assets/trash-removebg-preview.png);
+    background-size: cover;
+}
+
+#board div img{
+
+    /* this is all image tags inside the tile div tags*/
+    width: 100px;
+    height: 100px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
